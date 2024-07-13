@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubh Player - Video Project</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #ed7d3f;
+            color: #ecf0f1;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .video-section {
+            display: flex;
+            justify-content: center;
+        }
+        .video-card {
+            box-shadow: inset 0 5px 15px #00000073;
+            padding: 1rem;
+        }
+        .video-card {
+            margin-top: 15px;
+        }  
+        .video-card h1 {
+            margin: 12px 0;
+        }
+        .video-card a {
+            color: yellow;
+            text-decoration: none;
+            display: block;
+            margin: 0.5rem 0;
+        }
+        .video-card a:hover {
+            text-decoration: underline;
+        }
+        .video-card p {
+            color: whitesmoke;
+        }
+        .video-card span {
+            color: rgb(153, 0, 0);
+        }
+        video {
+            border-radius: 20px;
+            transition: all 0.2s;
+            box-shadow: 0 5px 15px #0000003d;
+        }
+        video:hover {
+            transform: scale(1.01);
+        }
+        h1, p, a {
+            padding-left: 5px;
+        }
+        @media (max-width: 900px){
+            video {
+                width: 700px;
+            }
+        }
+        @media (max-width: 750px){
+            video {
+                width: 500px;
+            }
+        }
+        @media (max-width: 600px){
+            video {
+                width: 400px;
+            }
+        }
+        @media (max-width: 500px){
+            video {
+                width: 300px;
+            }
+        }
+        @media (max-width: 350px){
+            video {
+                width: 250px;
+            }
+            .video-section {
+                margin: auto;
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="video-section">
+        <div class="video-card">
+            <h1>Welcome to Shubh Player</h1>
+            <video src="./Shubh-Be Mine.mp4" width="800" controls></video>
+            <p>Song: Be Mine</p>
+            <p>Artist: Shubh</p>
+            <a href="https://www.youtube.com/watch?v=QfRHgmEGfvw" target="_blank">Listen on youtube</a>
+            <p>Project by: Bilal Raza, available on <a href="https://github.com/billraza/VideoPlayer" style="display: inline; padding-left: 0%;" target="_blank">Github</a></p>
+            </div>
+    </section>
+    
+</body>
+</html>
